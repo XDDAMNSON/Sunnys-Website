@@ -1,0 +1,121 @@
+html {
+  background-color: black;
+  background-image: url('https://cdn.wallpapersafari.com/39/83/kKgoPS.gif');
+  background-repeat: no-repeat;
+  background-size: 170%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2e2e2e;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0 0 10px white;
+}
+
+.navbar-button {
+  padding: 50px 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-button:hover {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.about-box {
+  text-align: center;
+  background-color: rgb(51, 49, 49);
+  color: white;
+  padding: 50px;
+  margin: 0 auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
+
+.contact-info {
+  text-align: center;
+  background-color: #1d1a1a;
+  color: white;
+  padding: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0.1px; /* Adjust the margin-top to add more space below */
+}
+
+.contact-info h2 {
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-icons a {
+  margin: 12px;
+}
+
+.contact-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(110vh - 150px); /* Adjust the height to leave space for the about-box */
+  margin-top: -200px; /* Adjust the margin-top to move it lower */
+}
+
+.centered-image img {
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 150px; /* Adjust the margin-top value to move the image lower */
+  margin-right: 50px; /* Adjust the margin-right value to create spacing between the images */
+}
+
+.rectangle {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  background-color: #7be06d; /* Left color */
+}
+
+.square {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.square.left {
+  left: 0;
+  background-color: #000000; /* Right color */
+  background-image: url('https://files.catbox.moe/he6mjp.png'), url('https://files.catbox.moe/69whig.gif');
+  background-size: 40%, auto; /* Adjust the percentage value as needed */
+  background-position: right, left;
+  background-repeat: no-repeat;
+}
+
+.square.right {
+  right: 0;
+  background-image: url('https://files.catbox.moe/pdbe3d.png');
+  background-size: 90%;
+  background-position: right;
+}
