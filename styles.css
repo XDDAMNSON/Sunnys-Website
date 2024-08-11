@@ -2,58 +2,39 @@ html {
   background-color: black;
   background-image: url('https://cdn.wallpapersafari.com/39/83/kKgoPS.gif');
   background-repeat: no-repeat;
-  background-size: 170%;
+  background-size: 100%;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 150;
 }
 
 .navbar {
-  background-color: #2e2e2e;
-  padding: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  box-shadow: 0 0 10px white;
+  background-color: #050505;
+  padding: 35px;
+  font-family: 'Roboto Slab', serif; 
+  box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 .navbar-button {
-  padding: 50px 15px;
-  margin-right: 10px;
   text-decoration: none;
   color: #ffffff;
-  font-weight: bold;
+  background-size: 20%;
 }
 
 .navbar-button:hover {
-  background-color: #000000;
-  padding: 20px;
+  padding: 5px;
 }
 
-.about-box {
-  text-align: center;
-  background-color: rgb(51, 49, 49);
-  color: white;
-  padding: 50px;
-  margin: 0 auto;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: larger;
-}
 
 .contact-info {
   text-align: center;
-  background-color: #1d1a1a;
+  background-color: #131313;
   color: white;
-  padding: 50px;
+  padding: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 0.1px; /* Adjust the margin-top to add more space below */
-}
-
-.contact-info h2 {
-  color: white;
-  margin-bottom: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: x-large;
+  margin-top: 0.2px; /* Adjust the margin-top to add more space below */
 }
 
 .contact-icons {
@@ -64,12 +45,14 @@ body {
 }
 
 .contact-icons a {
-  margin: 12px;
+  margin: 15px;
 }
 
 .contact-icons img {
   width: 30px;
   height: 30px;
+  margin-right: -9px;
+  
 }
 
 .centered-image {
@@ -91,7 +74,7 @@ body {
   height: 550px;
   width: 100%;
   position: relative;
-  background-color: #7be06d; /* Left color */
+  background-color: #e06868; /* Right Color */
 }
 
 .square {
@@ -108,14 +91,99 @@ body {
   left: 0;
   background-color: #000000; /* Right color */
   background-image: url('https://files.catbox.moe/he6mjp.png'), url('https://files.catbox.moe/69whig.gif');
-  background-size: 40%, auto; /* Adjust the percentage value as needed */
+  background-size: 35%, auto; /* Adjust the percentage value as needed */
   background-position: right, left;
   background-repeat: no-repeat;
 }
 
 .square.right {
   right: 0;
-  background-image: url('https://files.catbox.moe/pdbe3d.png');
-  background-size: 90%;
-  background-position: right;
+  background-image: url('https://files.catbox.moe/s1yxdy.png'), url('https://files.catbox.moe/3j1swi.gif');
+  background-size: 45%, 50%;
+  background-position: right, left;
+  background-position-y: 120%, 50%; /* Adjusted position for both images */
+  background-position-x: 5%, 90%; /* Adjusted position for both images */
+}
+
+/* General Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Navbar Button Animation */
+.navbar-button {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Centered Image Animation */
+.centered-image img {
+  animation: slideIn 1s ease-out;
+}
+
+/* Rectangle Squares Animation */
+.rectangle .square {
+  animation: scaleUp 1s ease-out;
+}
+
+/* Contact Icons Animation */
+.contact-icons a {
+  display: inline-block;
+  animation: fadeIn 1.5s ease-out, scaleUp 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.contact-icons a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.contact-icons a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contact-icons a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.contact-icons a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.contact-icons a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.contact-icons a:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.contact-icons a:nth-child(7) {
+  animation-delay: 0.7s;
 }
