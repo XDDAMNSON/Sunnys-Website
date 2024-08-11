@@ -11,4 +11,3 @@ function scrollToTop() {
     var contactContent = document.getElementById("contactContent");
     contactContent.classList.toggle("hidden");
   }
-  
